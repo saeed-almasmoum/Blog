@@ -1,7 +1,7 @@
 <form action="{{ $action }}" method="POST" class="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg space-y-6">
     @csrf
 
-    <!-- الحقل الأول: عنوان -->
+    <!-- Title Field -->
     <div>
         <label for="title" class="block text-lg font-semibold text-gray-700 mb-2">Title:</label>
         <input 
@@ -14,7 +14,7 @@
         >
     </div>
 
-    <!-- الحقل الثاني: نص المقال -->
+    <!-- Body Field -->
     <div>
         <label for="body" class="block text-lg font-semibold text-gray-700 mb-2">Body:</label>
         <textarea 
@@ -27,11 +27,12 @@
         ></textarea>
     </div>
 
-    <!-- زر الإرسال -->
-    <div>
+    <!-- Submit Button -->
+    <div class="flex justify-center">
         <button 
             type="submit" 
-            class="w-full py-3 px-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-md shadow-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            class="bg-sky-500 text-white p-2 rounded transition duration-300 ease-in-out "
+            style="background-color: skyblue;"
         >
             Submit
         </button>
